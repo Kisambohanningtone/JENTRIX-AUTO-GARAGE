@@ -6,6 +6,7 @@
   <title>Jentrixx Auto Garage & Car Accessories</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/jpeg" href="Cars/JENTRIX.jpeg">
+
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Jentrix Auto Garage">
   <meta property="og:description" content="Trusted Car Repair & Body Shop in Ruaka, Kenya. Premium auto care, painting, diagnostics, and detailing.">
@@ -17,33 +18,26 @@
   <meta name="twitter:title" content="Jentrix Auto Garage">
   <meta name="twitter:description" content="Trusted Car Repair & Body Shop in Ruaka, Kenya.">
   <meta name="twitter:image" content="Cars/JENTRIX.jpeg">
- </head>
- <body>
-    <!-- HEADER -->
-   <header>
-      <nav>
-        <div class="logo">
-          <img src="Cars/JENTRIX.jpeg" alt="Jentrix Logo" height="60">
-       </div>
-       <span class="hamburger" onclick="toggleMenu()">☰</span>
-        <ul id="menu">
-         <li><a href="#home">HOME</a></li>
-         <li><a href="#services">SERVICES</a></li>
-         <li><a href="#about">ABOUT</a></li>
-         <li><a href="#contact">CONTACT</a></li>
-       </ul>
-     </nav>
-   </header>
+</head>
+<body>
 
-    <script>
-      function toggleMenu() {
-        document.getElementById("menu").classList.toggle("show");
-      }
-    </script>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="Cars/JENTRIX.jpeg" alt="Jentrix Logo" height="60">
+      </div>
+      <span class="hamburger" onclick="toggleMenu()">☰</span>
+      <ul id="menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
- 
-
- <!-- HOME -->
+  <!-- HOME -->
   <section id="home">
     <div class="hero-content">
       <h1>Premium Auto Care in Ruaka</h1>
@@ -51,8 +45,8 @@
       <div class="hero-buttons">
         <a href="#services" class="btn">View Our Services</a>
         <button class="btn" onclick="showForm()">Book a Service</button>
-     </div>
-     <div class="usp-row">
+      </div>
+      <div class="usp-row">
         <div class="usp">🛠️ Expert Technicians</div>
         <div class="usp">🚗 Accident Repair Specialists</div>
         <div class="usp">🎨 Premium Paint & Detailing</div>
@@ -60,31 +54,27 @@
       </div>
     </div>
   </section>
- 
-  <!-- ABOUT -->
- <section id="about">
-   <!-- Heading -->
-   <h2>Trusted Car Repair & Body Shop</h2>
-   <p>We’ve grown into one of Kenya’s most trusted names in automotive care.</p>
 
-   <!-- Company Image -->
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>Trusted Car Repair & Body Shop</h2>
+    <p>We’ve grown into one of Kenya’s most trusted names in automotive care.</p>
+
     <div class="about-image">
       <img src="Cars/workshop.jpg" alt="Jentrix Workshop">
     </div>
 
-   <!-- Mission & Vision -->
     <div class="mission-vision">
       <div class="mv-card">
         <h3>Our Mission</h3>
         <p>To deliver reliable, transparent, and premium auto care services that keep our clients safe and satisfied.</p>
       </div>
-     <div class="mv-card">
+      <div class="mv-card">
         <h3>Our Vision</h3>
         <p>To be Kenya’s most trusted auto garage, blending innovation, sustainability, and customer-first service.</p>
       </div>
     </div>
 
-    <!-- Journey Timeline -->
     <h3>Our Journey</h3>
     <div class="timeline">
       <div class="timeline-item"><strong>2019:</strong> Founded in Ruaka</div>
@@ -95,7 +85,6 @@
       <div class="timeline-item"><strong>2026:</strong> Premium auto solutions nationwide</div>
     </div>
 
-    <!-- Core Values -->
     <h3>Our Core Values</h3>
     <div class="values-grid">
       <div class="value-card">Social Responsibility</div>
@@ -107,12 +96,12 @@
   <!-- SERVICES -->
   <section id="services">
     <h2>Our Services</h2>
-   <div class="services-grid">
-     <div class="service-card">
+    <div class="services-grid">
+      <div class="service-card">
         <img src="Cars/paint.jpg.jpeg" alt="Car being painted">
         <h3>Paint</h3>
         <p>Professional car painting with premium finishes.</p>
-       <button onclick="showForm()">Book Now</button>
+        <button onclick="showForm()">Book Now</button>
       </div>
 
       <div class="service-card">
@@ -142,7 +131,6 @@
         <p>Premium accessories to upgrade your car.</p>
         <button onclick="showForm()">Book Now</button>
       </div>
-    
 
       <div class="service-card">
         <img src="Cars/detailing.jpg" alt="Car detailing">
@@ -165,9 +153,7 @@
     <h2>Book a Service</h2>
     <form class="booking-form">
       <input type="text" placeholder="Full Name" required>
-
       <input type="tel" placeholder="Phone Number" required>
-
       <select required>
         <option value="">Select Service</option>
         <option>Paint</option>
@@ -177,23 +163,18 @@
         <option>Car Accessories</option>
         <option>Detailing</option>
       </select>
-
       <input type="date" required>
       <input type="time" required>
-
       <input type="email" placeholder="Email Address" required>
-
       <button type="submit">Confirm Booking</button>
     </form>
   </section>
 
-   
   <!-- CONTACT -->
   <section id="contact">
     <h2>Talk to Us</h2>
     <form class="contact-form">
       <input type="text" placeholder="Full Name" required>
-
       <select required>
         <option value="">Select Service</option>
         <option>Paint</option>
@@ -202,67 +183,33 @@
         <option>Wheel Alignment</option>
         <option>Car Accessories</option>
         <option>Detailing</option>
-     </select>
-
+      </select>
       <textarea placeholder="Your Message" rows="6" required></textarea>
-
       <input type="email" placeholder="Email Address" required>
-
       <button type="submit">Submit</button>
     </form>
   </section>
 
- <!-- FOOTER -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-content">
       <p>“Driven by Trust, Powered by Care”</p>
 
-     <!-- Social Icons -->
-     <div class="social-icons">
+      <div class="social-icons">
         <a href="https://www.tiktok.com/@jentrixautogarage/video/7596340934879612171" target="_blank">
           <img src="Cars/tiktok.png" alt="TikTok">
-       </a>
-
+        </a>
         <a href="https://www.instagram.com/j.e.n.t.r.i.x.a.u.t.o.garage/p/DNoARiWM0Q5/" target="_blank">
           <img src="Cars/instagram.jpg" alt="Instagram">
         </a>
-
-        <a href="https://www.facebook.com/profile.php?id=100075883675314&__tn__=%3C" target="_blank">
-         <img src="Cars/facebook.png" alt="Facebook">
+        <a href="https://www.facebook.com/JentrixAutoGarage" target="_blank ">
+          <img src="Cars/facebook.png" alt="Facebook">   
         </a>
-
       </div>
 
-     <!-- Subscribe Form -->
-      <div class="subscribe">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-      </div>
-
-     <!-- Location -->
-      <p>Ruaka, Kenya</p>
+      <p>© 2024 Jentrix Auto Garage. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    const menu = document.querySelector('.menu');
-    const nav = document.querySelector('nav');
-    menu.addEventListener('click', () => {
-      nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-    });
-
-    function showForm() {
-      document.getElementById('booking').style.display = 'block';
-      window.location.hash = 'booking';
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-<script>
-  function showForm() {
-    // Show the booking section
-    document.getElementById('booking').style.display = 'block';
-    // Scroll smoothly to the booking form
-    document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
