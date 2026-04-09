@@ -13,51 +13,57 @@ img {
 /* Navbar */
 nav {
   background-color: #ffffff; /* White background */
-  padding: 10px 20px;
+  padding: 20px 30px;        /* Enlarged height */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;           /* Keeps navbar stagnant */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;             /* Stays above content */
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;                 /* More spacing between links */
 }
 
 nav ul li a {
-  color: #000000; /* Black text */
+  color: #000000;            /* Black text */
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;           /* Slightly larger text */
 }
 
 /* Hamburger icon */
 .hamburger {
   display: none;
-  font-size: 28px;
-  color: #000000; /* Black hamburger */
+  font-size: 32px;           /* Larger hamburger */
+  color: #000000;
   cursor: pointer;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   nav ul {
-    display: none; /* Hide menu links */
+    display: none;
     flex-direction: column;
     background-color: #ffffff;
     position: absolute;
-    top: 60px;
+    top: 80px;               /* Below enlarged navbar */
     right: 0;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
   }
 
   nav ul.show {
-    display: flex; /* Show when toggled */
+    display: flex;
   }
 
   .hamburger {
-    display: block; /* Show hamburger on mobile */
+    display: block;
   }
 }
 /* Header with logo + menu */
