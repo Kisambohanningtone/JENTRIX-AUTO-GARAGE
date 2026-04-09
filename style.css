@@ -5,8 +5,64 @@ body {
   background-color: #fff;
   color: #333;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Navbar */
+nav {
+  background-color: #ffffff; /* White background */
+  padding: 10px 20px;
+}
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
+nav ul li a {
+  color: #000000; /* Black text */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #000000; /* Black hamburger */
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide menu links */
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex; /* Show when toggled */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+}
+
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+}
 /* Header with logo + menu */
 header {
   position: fixed;
