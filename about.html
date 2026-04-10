@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jentrix Auto Garage - About Us</title>
   <style>
     body {
@@ -44,6 +45,19 @@
     footer a {
       color: orange;
       text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .footer-columns {
+      flex-direction: column;
+      text-align: center;
+     }
+     .footer-col {
+      margin: 15px 0;
+      }
+
+     .service-card img {
+      height: auto; /* let images shrink naturally */
+      }
     }
   </style>
 </head>
