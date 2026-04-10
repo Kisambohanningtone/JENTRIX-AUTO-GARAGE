@@ -559,11 +559,13 @@ header {
 /* RESPONSIVE FOOTER FIX */
 @media (max-width: 768px) {
   .footer-columns {
-    flex-direction: column;   /* stack vertically */
+    flex-direction: column;
+    align-items: center;   /* stack vertically */
     text-align: center;       /* center text */
   }
   .footer-col {
     margin: 15px 0;
+    width: 100%;              /* full width columns */
   }
   .newsletter input {
     width: 100%;              /* full width input */
