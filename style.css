@@ -1,3 +1,10 @@
+/* Disable blinking cursor and text editing globally */
+body, h1, h2, h3, h4, h5, h6, p, span, div {
+  user-select: none;   /* prevents text selection */
+  cursor: default;     /* shows normal arrow cursor */
+  caret-color: transparent; /* hides blinking text cursor */
+}
+
 /* Global Theme */
 body {
   margin: 0;
@@ -108,48 +115,30 @@ header {
 }
 
 
-/* Hero Section */
-#home {
-  background: none; /* no background image */
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 95vh;              /* taller section for maximum visibility */
+  overflow: hidden;
 }
 
-.hero-content h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-.hero-content p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
+.home-image {
+  width: 100%;
+  height: 100%;
 }
 
-.hero-buttons {
-  margin-bottom: 40px;
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* fills space without distortion */
+  object-position: 40% center; /* pushes image lower so signage is visible */
+  display: block;
 }
-.hero-buttons .btn {
-  padding: 12px 25px;
-  margin: 0 10px;
-  background: linear-gradient(to right, orange, green, blue);
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: opacity 0.3s ease;
-}
-.hero-buttons .btn:hover {
-  opacity: 0.9;
-}
-
-.usp-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.usp {
-  background: rgba(0,0,0,0.5);
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 1em;
+@media (max-width: 768px) {
+  .home-image img {
+    object-position: 50% center; /* lower focus for mobile */
+  }
 }
 
 /* Timeline */
