@@ -1,10 +1,16 @@
 /* Disable blinking cursor and text editing globally */
-body, h1, h2, h3, h4, h5, h6, p, span, div {
-  user-select: none;   /* prevents text selection */
-  cursor: default;     /* shows normal arrow cursor */
-  caret-color: transparent; /* hides blinking text cursor */
+* {
+  caret-color: transparent !important; /* hides blinking text cursor */
+  cursor: default !important;          /* shows normal arrow cursor */
 }
 
+body, h1, h2, h3, h4, h5, h6, p, span, div {
+  user-select: none !important;        /* prevents text selection */
+}
+* {
+  caret-color: transparent !important;
+  cursor: default !important;
+}
 /* Global Theme */
 body {
   margin: 0;
