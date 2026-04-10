@@ -115,35 +115,35 @@
     <section id="services">
       <h2>Our Services</h2>
       <div class="services-grid">
-       <div class="service-card">
+       <div class="service-card" id="Original Spray Paint">
           <img src="Cars/paint.jpeg" alt="Car being painted">
           <h3>Original Spray Paint</h3>
           <p>Using advanced color-matching technology for a perfect, factory-standard finish. We restore your car's original aesthetic after a scratch or a full respray.</p>
           <button onclick="showForm()">Book Now</button>
         </div>
 
-       <div class="service-card">
+       <div class="service-card" id="Light Diagnostic & Wiring">
           <img src="Cars/Light Diagnostic.jpeg" alt="Light Diagnostic">
           <h3>Light Diagnostic & Wiring</h3>
           <p>Troubleshoot and fix all electrical and lighting systems, from simple bulb replacements to complex wiring issues.</p>
           <button onclick="showForm()">Book Now</button>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="Suspension Repairs">
           <img src="Cars/suspensio repairs.jpeg" alt="Suspension Repairs">
           <h3>Suspension Repairs</h3>
           <p>From shock absorbers to ball joints, we diagnose and repair all suspension issues to ensure a comfortable and safe ride.</p>
           <button onclick="showForm()">Book Now</button>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="Major Mechanical Repairs">
           <img src="Cars/major mechanical repair.jpeg" alt="Major Mechanical Repairs">
           <h3>Major Mechanical Repairs</h3>
           <p>Don't let a major issue sideline you. Our team is equipped to handle complex engine, transmission, and drivetrain repairs with precision and efficiency.</p>
           <button onclick="showForm()">Book Now</button>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="Spare Parts & Accessories">
           <img src="Cars/spare parts.jpeg" alt="Spare parts">
           <h3>Spare Parts & Accessories</h3>
           <p>We stock and source a wide range of genuine and high-quality spare parts and accessories for various makes and models.</p>
@@ -152,28 +152,28 @@
       
     
 
-       <div class="service-card">
+       <div class="service-card" id="Regular Engine Service">
           <img src="Cars/regular engine service.jpeg" alt="Regular Engine Service">
           <h3>Regular Engine Service</h3>
           <p>Routine oil changes, filter replacements, and system checks to maintain engine health, improve fuel efficiency, and extend your car’s lifespan.</p>
           <button onclick="showForm()">Book Now</button>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="Panel Beating">
           <img src="Cars/panel_beating.jpeg" alt="Panel Beating">
           <h3>Panel Beating</h3>
           <p>Our skilled panel beaters meticulously repair dents, dings, and collision damage, restoring your vehicle's body to its original form.</p>
           <button onclick="showForm()">Book Now</button>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="Gearbox Servicing">
           <img src="Cars/gearbox servicing.jpeg" alt="Gearbox Servicing">
           <h3>Gearbox Servicing</h3>
           <p>From fluid changes to diagnostics, we ensure your gearbox shifts smoothly and reliably</p>
           <button onclick="showForm()">Book Now</button>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="Original Lummar Tint">
           <img src="Cars/original lumar tint.jpeg" alt="Original Lummar Tint">
           <h3>Original Lummar Tint</h3>
           <p>Enhance your vehicle's appearance with our premium tinting services using original Lummar films.</p>
@@ -193,12 +193,15 @@
 
         <select required>
          <option value="">Select Service</option>
-         <option>Paint</option>
-         <option>Accident Repair</option>
-         <option>Engine Diagnostics</option>
-         <option>Wheel Alignment</option>
-         <option>Car Accessories</option>
-         <option>Detailing</option>
+         <option>Original Spray Paint</option>
+         <option>Light Diagnostic & Wiring</option>
+         <option>Suspension Repairs</option>
+         <option>Major Mechanical Repairs</option>
+         <option>Spare Parts & Accessories</option>
+         <option>Regular Engine Service</option>
+         <option>Panel Beating</option>
+         <option>Gearbox Servicing</option>
+         <option>Original Lummar Tint</option>
         </select>
 
        <input type="date" required>
@@ -207,6 +210,7 @@
         <input type="email" placeholder="Email Address" required>
 
         <button type="submit">Confirm Booking</button>
+        <button onclick="document.getElementById('booking').style.display='block';  document.getElementById('booking').scrollIntoView({behavior:'smooth'});">  Book Now</button>
       </form>
     </section>
 
@@ -219,12 +223,15 @@
 
        <select required>
          <option value="">Select Service</option>
-         <option>Paint</option>
-         <option>Accident Repair</option>
-         <option>Engine Diagnostics</option>
-         <option>Wheel Alignment</option>
-         <option>Car Accessories</option>
-         <option>Detailing</option>
+         <option>Original Spray Paint</option>
+         <option>Light Diagnostic & Wiring</option>
+         <option>Suspension Repairs</option>
+         <option>Major Mechanical Repairs</option>
+         <option>Spare Parts & Accessories</option>
+         <option>Regular Engine Service</option>
+         <option>Panel Beating</option>
+         <option>Gearbox Servicing</option>
+         <option>Original Lummar Tint</option>
        </select>
 
        <textarea placeholder="Your Message" rows="6" required></textarea>
@@ -235,37 +242,86 @@
       </form>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-content">
-        <p>“Driven by Trust, Powered by Care”</p>
+   <!-- FOOTER -->
+   <footer class="site-footer">
+      <!-- Top Buttons -->
+     <div class="footer-top">
+       <li><a href="service.html">Services</a></li>
+       <a href="service.html#booking" class="footer-btn book-btn">Book Online Now</a>
+       <a href="tel:0743161326" class="footer-btn call-btn">Call Us: 0743 161 326 | 0731 812 187</a>
+     </div>
 
-        <!-- Social Icons -->
-        <div class="social-icons">
-          <a href="https://www.tiktok.com/@jentrixautogarage/video/7596340934879612171" target="_blank">
-            <img src="Cars/tiktok.png" alt="TikTok">
-          </a>
-
-         <a href="https://www.instagram.com/j.e.n.t.r.i.x.a.u.t.o.garage/p/DNoARiWM0Q5/" target="_blank">
-            <img src="Cars/instagram.jpg" alt="Instagram">
-         </a>
-
-         <a href="https://www.facebook.com/profile.php?id=100075883675314&__tn__=%3C" target="_blank">
-           <img src="Cars/facebook.png" alt="Facebook">
-         </a>
-
+     <!-- Columns -->
+     <div class="footer-columns">
+        <!-- Column 1 -->
+        <div class="footer-col">
+         <h3>Jentrix Auto Garage</h3>
+         <p>Driven by Trust, Powered by Care</p>
+         <p>Ruaka, Kenya</p>
         </div>
 
-       <!-- Subscribe Form -->
-        <div class="subscribe">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
+       <!-- Column 2 -->
+       <div class="footer-col">
+         <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
-       <!-- Location -->
-        <p>Ruaka, Kenya</p>
+        <!-- Column 3 -->
+        <footer class="site-footer">
+          <div class="footer-columns">
+            <div class="footer-col">
+             <h3>Services</h3>
+              <ul>
+               <li><a href="service.html#original-spray-paint">Original Spray Paint</a></li>
+               <li><a href="service.html#light-diagnostic-wiring">Light Diagnostic & Wiring</a></li>
+               <li><a href="service.html#suspension-repairs">Suspension Repairs</a></li>
+               <li><a href="service.html#major-mechanical-repairs">Major Mechanical Repairs</a></li>
+               <li><a href="service.html#spare-parts-accessories">Spare Parts & Accessories</a></li>
+               <li><a href="service.html#regular-engine-service">Regular Engine Service</a></li>
+               <li><a href="service.html#panel-beating">Panel Beating</a></li>
+               <li><a href="service.html#gearbox-servicing">Gearbox Servicing</a></li>
+               <li><a href="service.html#original-lummar-tint">Original Lummar Tint</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+       
+
+       <!-- Column 4 -->
+       <div class="footer-col">
+         <h3>Connect With Us</h3>
+         <div class="social-icons">
+           <a href="https://www.tiktok.com/@jentrixautogarage/video/7596340934879612171" target="_blank">
+             <img src="Cars/tiktok.png" alt="TikTok">
+           </a>
+           <a href="https://www.instagram.com/j.e.n.t.r.i.x.a.u.t.o.garage/p/DNoARiWM0Q5/" target="_blank">
+             <img src="Cars/instagram.jpg" alt="Instagram">
+            </a>
+           <a href="https://www.facebook.com/profile.php?id=100075883675314&__tn__=%3C" target="_blank">
+             <img src="Cars/facebook.png" alt="Facebook">
+            </a>
+          </div>
+         <p>Subscribe to our newsletter for offers & tips</p>
+         <div class="subscribe">
+           <input type="email" placeholder="Enter your email" required>
+           <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+     <!-- Bottom -->
+     <div class="footer-bottom">
+       <hr>
+       <p>© 2026 Jentrix Auto Garage. All rights reserved.</p>
+       <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </footer>
+     
 
    <script>
      const menu = document.querySelector('.menu');

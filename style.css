@@ -469,26 +469,79 @@ header {
   transform: scale(1.05);
 }
 
-/* Footer */
-footer {
+/* FOOTER */
+.site-footer {
   background: linear-gradient(to right, orange, green, blue);
+  color: #fff;
   padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+/* Top buttons */
+.footer-top {
   text-align: center;
+  margin-bottom: 20px;
+}
+.footer-btn {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.book-btn {
+  background: orange;
   color: #fff;
 }
-.footer-content {
-  max-width: 800px;
-  margin: auto;
+.call-btn {
+  background: #fff;
+  color: #333;
+}
+.footer-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Columns */
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.footer-col {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+.footer-col h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col ul li {
+  margin: 5px 0;
+}
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-col a:hover {
+  text-decoration: underline;
 }
 
 /* Social Icons */
 .social-icons {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .social-icons a img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 8px;
   transition: transform 0.3s ease;
 }
 .social-icons a img:hover {
@@ -497,21 +550,26 @@ footer {
 
 /* Subscribe Form */
 .subscribe {
-  margin: 20px 0;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  margin-top: 10px;
 }
 .subscribe input {
-  padding: 12px;
-  border: none;
+  padding: 10px;
+  border: 2px solid #fff;
   border-radius: 6px;
-  width: 250px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  width: 200px;
+}
+.subscribe input::placeholder {
+  color: #eee;
 }
 .subscribe button {
-  padding: 12px 20px;
-  background: #fff;
-  color: #333;
+  padding: 10px 15px;
+  margin-left: 8px;
+  background: orange;
+  color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -519,6 +577,33 @@ footer {
   transition: all 0.3s ease;
 }
 .subscribe button:hover {
-  background: rgba(255,255,255,0.9);
-  transform: scale(1.05);
+  background: green;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+.footer-bottom hr {
+  border: none;
+  border-top: 2px solid #fff;
+  margin-bottom: 10px;
+}
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-col a:hover {
+  color: red; /* highlight with theme color */
+  text-decoration: underline;
 }
