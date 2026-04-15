@@ -475,14 +475,7 @@ header {
   color: #fff;
   padding: 40px 20px;
   margin-top: 40px;
-  width: 100%;               /* ensure full width */
-  box-sizing: border-box;    /* include padding in width */
-  overflow-x: hidden;        /* prevent horizontal scroll */
-}
-
-.footer-top,
-.footer-columns {
-  max-width: 100%;           /* prevent overflow */
+  width: 100%;               /* full width */
   box-sizing: border-box;
 }
 
@@ -498,17 +491,28 @@ header {
 }
 
 .footer-btn {
-  padding: 10px 15px;
-  background: orange;
-  color: #fff;
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
   border-radius: 6px;
-  text-decoration: none;
+  cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.book-btn {
+  background: orange;
+  color: #fff;
+}
+
+.call-btn {
+  background: #fff;
+  color: #333;
 }
 
 .footer-btn:hover {
-  background: green;
+  transform: scale(1.05);
 }
 
 /* Contact numbers */
@@ -537,109 +541,44 @@ header {
   color: orange;
 }
 
-/* Bottom section */
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.footer-bottom hr {
-  border: 0;
-  border-top: 1px solid #444;
-  margin-bottom: 15px;
-}
-
-.footer-bottom a {
-  color: orange;
-  text-decoration: none;
-}
-
-/* RESPONSIVE FOOTER FIX */
-@media (max-width: 768px) {
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;      /* stop sideways scroll */
-  }
-
-  .footer-top {
-    flex-direction: column;   /* stack everything vertically */
-    gap: 10px;
-  }
-
-  .footer-btn {
-    width: 100%;              /* full width buttons */
-    text-align: center;
-  }
-
-  .footer-contact {
-    flex-direction: column;   /* stack numbers vertically */
-    gap: 5px;
-  }
-
-  .footer-contact span {
-    display: none;            /* hide the "|" separator on mobile */
-  }
-  .site-footer {
-    padding: 30px 15px;      /* balanced padding on small screens */
-  }
-
-}
-/* Top buttons */
-.footer-top {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.footer-btn {
-  padding: 12px 20px;
-  margin: 5px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-.book-btn {
-  background: orange;
-  color: #fff;
-}
-.call-btn {
-  background: #fff;
-  color: #333;
-}
-.footer-btn:hover {
-  transform: scale(1.05);
-}
-
 /* Columns */
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;   /* ensures all columns align at the top */
+  align-items: flex-start;   /* align all columns at the top */
   max-width: 1200px;
   margin: auto;
+  box-sizing: border-box;
 }
+
 .footer-col {
   flex: 1 1 200px;
   margin: 10px;
 }
+
 .footer-col h3 {
-  margin-top: 0;   /* removes extra spacing above headings */
+  margin-top: 0;
 }
+
 .footer-col ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
+
 .footer-col ul li {
   margin: 5px 0;
 }
+
 .footer-col a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
+
 .footer-col a:hover {
+  color: red;
   text-decoration: underline;
 }
 
@@ -647,12 +586,14 @@ header {
 .social-icons {
   margin: 15px 0;
 }
+
 .social-icons a img {
   width: 35px;
   height: 35px;
   margin: 0 8px;
   transition: transform 0.3s ease;
 }
+
 .social-icons a img:hover {
   transform: scale(1.2);
 }
@@ -663,6 +604,7 @@ header {
   justify-content: center;
   margin-top: 10px;
 }
+
 .subscribe input {
   padding: 10px;
   border: 2px solid #fff;
@@ -671,9 +613,11 @@ header {
   color: #fff;
   width: 200px;
 }
+
 .subscribe input::placeholder {
   color: #eee;
 }
+
 .subscribe button {
   padding: 10px 15px;
   margin-left: 8px;
@@ -685,34 +629,87 @@ header {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+
 .subscribe button:hover {
   background: green;
 }
 
-/* Bottom */
+/* Bottom section */
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
   padding-top: 15px;
 }
+
 .footer-bottom hr {
   border: none;
   border-top: 2px solid #fff;
   margin-bottom: 10px;
 }
+
 .footer-bottom a {
   color: #fff;
   text-decoration: none;
 }
+
 .footer-bottom a:hover {
   text-decoration: underline;
 }
-.footer-col a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.footer-col a:hover {
-  color: red; /* highlight with theme color */
-  text-decoration: underline;
+
+/* RESPONSIVE FOOTER FIX */
+@media (max-width: 768px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;      /* stop sideways scroll */
+  }
+
+  .footer-top {
+    flex-direction: column;  /* stack vertically */
+    gap: 10px;
+  }
+
+  .footer-btn {
+    width: 100%;             /* full width buttons */
+    text-align: center;
+  }
+
+  .footer-contact {
+    flex-direction: column;  /* stack numbers vertically */
+    gap: 5px;
+  }
+
+  .footer-contact span {
+    display: none;           /* hide "|" separator on mobile */
+  }
+
+  .site-footer {
+    padding: 30px 15px;      /* balanced padding */
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button {
+    width: 100%;
+    margin-left: 0;
+  }
 }
